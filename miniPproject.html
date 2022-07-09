@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-image:conic-gradient(red,yellow,green);
+        }
+    </style>
+</head>
+<body>
+    <div >
+    
+        <div style="text-align: center; margin-top: 20px; text-align:center;"><br>
+           <div style="background-color:aqua;"> <h3>Registration Form</h3></div>
+        <label>First Name*:</label>
+        <input type="text" id="name" placeholder="Your first name" required><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" id="last" placeholder="Your last name"><br><br>
+        <label>Password*:</label>
+        <input type="password" id="password" placeholder="Choose a strong password "required><br><br>
+        <label>Confirm Password</label>
+        <input type="password" id="password" placeholder="Retype your password"><br><br>
+        <label>Birthday*:</label>
+        <input type="date" id="date" placeholder="mm/dd/yyyy" required>
+        <h3>What is your gender?</h3>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <input type="radio" name="gender" value="any">Prefer not to answer
+        <h3> Tell us a little bit about yourself!</h3>
+        
+        <textarea rows="5" cols="30" placeholder="A breif description about yourself"></textarea>
+        <h3> What is your favorite front-end language?</h3>
+        <label>Choose a language*</label>
+        <select name="lang" id="lang" required>
+            <option value="html">Html</option>
+            <option value="html">Css</option>
+            <option value="html">Javascript</option>
+            <option value="html">Reactjs</option>
+        </select><br>
+        <input type="button" value="Submit my Answer" onclick="save()" style="background-color:aqua">
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    function save(params) {
+        alert("data is save sucessfully");
+    }
+
+    
+</script>
+</html>
